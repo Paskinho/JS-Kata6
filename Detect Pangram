@@ -1,0 +1,9 @@
+Моё решение
+
+function isPangram(string){
+ if (str.inludes(string)) {
+   return true 
+ }
+  else return false
+
+}
