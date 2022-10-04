@@ -1,1 +1,22 @@
+Верное решение 
+
+function alphabetPosition(text) {
+ return text.split('').filter(v=>/[a-zA-Z]/.test(v)).map(v=>v.toLowerCase().charCodeAt(0)-96).join(' ');
+}
+
+
+Более понятное решение
+
+function alphabetPosition(text) {
+  var result = "";
+  for (var i = 0; i < text.length; i++){
+    var code = text.toUpperCase().charCodeAt(i)
+    if (code > 64 && code < 91) result += (code - 64) + " ";
+  }
+
+  return result.slice(0, result.length-1);
+}
+
+
+Метод charCodeAt() возвращает числовое значение Юникода для символа по указанному индексу (за исключением кодовых точек Юникода, больших 0x10000).
 
