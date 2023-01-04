@@ -1,0 +1,7 @@
+Моё изначальное решение:
+
+function isValidWalk(walk) {
+  let result = walk.reduce(function(sum, elem)
+  let a = sum + elem
+  (a === 10) ? 'should return true' : 'should return false'
+}
