@@ -11,3 +11,10 @@ This is the first kata in series:
 function findUniq(arr) {
   // do magic
 }
+
+Решил не сам
+
+function findUniq(arr) {
+   let repeated = arr.filter((item, index) => arr.indexOf(item) !== index)
+  return arr.filter((item)=> item !== repeated[0])[0]
+}
