@@ -4,3 +4,8 @@ Example
 "camelCasing"  =>  "camel Casing"
 "identifier"   =>  "identifier"
 ""             =>  ""
+
+
+function solution(string) {
+return string.split(/\s+|\_+|(?=[A-Z])/gm).join(' ')
+}
