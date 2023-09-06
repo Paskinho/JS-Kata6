@@ -32,3 +32,20 @@ function stockList(listOfArt, listOfCat){
 }
 
 SOLUTION
+
+function stockList(listOfArt, listOfCat){
+ if(listOfArt.length===0||listOfCat.length===0) return ''   if length of any array equal null then return empty string
+  const arrs=[]; create empty array
+  let L='';  create empty string
+  let N=0; create n equal null
+  for (let i=0;i<listOfCat.length;i++){  cycle for each
+  L=listOfCat[i]; i element of array listOfCat
+  N=0; 
+  for (let j=0;j<listOfArt.length;j++){ cycle for each in cycle ащк each
+  if (listOfArt[j][0]===listOfCat[i]){N+=listOfArt[j].match(/[\d]+/g)*1}} 
+  let str=`(${L} : ${N})`
+  arrs.push(str)
+  }
+  return arrs.join(' - ')
+}
+
